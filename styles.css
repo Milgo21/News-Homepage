@@ -26,10 +26,16 @@
 }
 .two{
     grid-area: two;
-    background-color: aqua;
+    background-color: hsl(240, 100%, 5%);
     display: flex;
     flex-direction: column;
     border: 10px;
+}
+.two p {
+    color: hsl(36, 100%, 99%);
+}
+.two h1 {
+    color: hsl(36, 100%, 99%);
 }
 .three{
     grid-area: four;
@@ -72,4 +78,8 @@
 }
 .button-lighten:hover{
     background-color: hsl(35, 77%, 62%);
+}
+hr{
+    color: hsl(36, 100%, 99%);
+
 }
