@@ -1,17 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
 .container{
-    /* width: 98vw;
-    height: 98vh; */
+    width: '100%';
     display: grid;
-    justify-items: center;
-    align-items: center;
+    box-sizing: border-box;
+    margin: 0 4rem 0 4rem;
 }
 .content{
-    width: 95%;
-    height: 95%;
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(3/1fr);
     grid-template-rows: repeat(3/1fr);
-    gap: 10px;
+    gap: 2rem;
     grid-template-areas: 
     "one one two"
     "four three two"
@@ -27,23 +32,44 @@
 .two{
     grid-area: two;
     background-color: hsl(240, 100%, 5%);
-    display: flex;
-    flex-direction: column;
-    border: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3.5rem;
 }
 .two p {
     color: hsl(36, 100%, 99%);
 }
 .two h1 {
+    color: hsl(35, 77%, 62%);
+    font-weight: 700;
+}
+.two h4 {
     color: hsl(36, 100%, 99%);
+    font-weight: bolder
+}
+.two h4:hover {
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
 }
 .three{
     grid-area: four;
+    width: 100%;
+    box-sizing: border-box;
     border: 10px;
+}
+.three > h1{
+    font-weight: 900;
+    font-size: 3.5rem;
 }
 .four{
     grid-area: three;
+    /* padding: 3rem; */
     border: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .five{
     grid-area: five;
@@ -63,23 +89,88 @@
     display: flex;
     flex-direction: row;
 }
-*{
-    margin: o;
-    padding: 0;
-}
+
 .navbar{
     display: flex;
-    justify-content: space-around;
+    width: '100%';
+    padding: 2rem 0 2rem 0;
+    justify-content: space-between;
     align-items: center;
+}
+#nav-links{
+    flex: 0.5;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#nav-links > a{
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+}
+#nav-links > a:hover{
+    color: hsl(5, 85%, 63%);
 }
 .logo{
     display: flex;
     justify-content: flex-start;
 }
+.button-lighten{
+    all: unset;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    font-size: 13px;
+}
 .button-lighten:hover{
-    background-color: hsl(35, 77%, 62%);
+    background-color:  hsl(240, 100%, 5%);
+    cursor: pointer;
+}
+.four p {
+    font-size: 15px;
+    color: hsl(236, 13%, 42%);
 }
 hr{
     color: hsl(36, 100%, 99%);
 
+}
+.bottom-cards{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.bottom-cards h2{
+    color: hsl(236, 13%, 42%);
+    font-weight: 700;
+}
+.card-image{
+    flex: 0.4;
+}
+.card-image img{
+    width: 100%;
+    height: 100%;
+}
+.card-text{
+    flex: 0.6;
+}
+.card-text h4{
+    color: hsl(240, 100%, 5%);
+}
+.card-text h4:hover{
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+.card-text p{
+    font-size: 15px;
+    color: hsl(236, 13%, 42%);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 2rem 1rem 2rem 1rem;
+  }
+.attribution a {
+color: hsl(228, 45%, 44%);
 }

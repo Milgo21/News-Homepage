@@ -6,25 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News Homepage</title>
     <link rel="stylesheet" href="./styles.css" />
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@100;200&family=Roboto&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
       <!-- Div Logo and Navbar -->
       <div class="navbar">
-        <img class="logo" src="./assets/images/logo.svg" alt="" srcset="" />
-        <a href="">New</a>
-        <a href="">Popular</a>
-        <a href="">Trending</a>
-        <a href="">Categories</a>
+        <div id="logo">
+          <img class="logo" src="./assets/images/logo.svg" alt="" srcset="" />
+        </div>
+        <div id="nav-links">
+          <a href="">Home</a>
+          <a href="">New</a>
+          <a href="">Popular</a>
+          <a href="">Trending</a>
+          <a href="">Categories</a>
+        </div>
       </div>
       <div class="content">
         <!-- Div one -->
@@ -39,7 +41,10 @@
           <br />
           <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
           <br />
-          <hr>
+          <br />
+          <hr />
+          <br />
+          <br />
           <h4>The Downsides of AI Artistry</h4>
           <br />
           <p>
@@ -47,8 +52,12 @@
             generation?
           </p>
           <br />
-          <hr>
+          <br />
+          <hr />
+          <br />
+          <br />
           <h4>Is VC Funding Drying Up?</h4>
+          <br />
           <p>
             Private funding by VC firms is down 50% YOY. We take a look at what
             that means.
@@ -56,41 +65,61 @@
         </div>
         <!-- Div Three -->
         <div class="three">
-          <h1><p>The Bright Future of Web 3.0?</p></h1>
+          <h1>The Bright Future of Web 3.0?</h1>
         </div>
         <!-- Div 4 Text Readmore -->
         <div class="four">
-          <p>
-            We dive into the next evolution of the web that claims to put the
-            power of the platforms back into the hands of the people. But is it
-            really fulfilling its promise?<a class="button-lighten"
-              >Read more</a
-            >
-          </p>
+          <div>
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+          </div>
+          <div><button class="button-lighten">READ MORE</button></div>
         </div>
         <!-- Div five -->
-        <div class="five">
-          <img src="./assets/images/image-retro-pcs.jpg" alt="" srcset="" />
-          <p>
-            01 Reviving Retro PCs What happens when old PCs are given modern
-            upgrades?
-          </p>
+        <div class="five bottom-cards">
+          <div class="card-image">
+            <img src="./assets/images/image-retro-pcs.jpg" alt="" srcset="" />
+          </div>
+          <div class="card-text">
+            <h2>01</h2>
+            <br />
+            <h4>Reviving Retro PCs</h4>
+            <br />
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
         </div>
         <!-- .Div six -->
-        <div class="six">
-          <img src="./assets/images/image-top-laptops.jpg" alt="" srcset="" />
-          <p>
-            02 Top 10 Laptops of 2022 Our best picks for various needs and
-            budgets.
-          </p>
+        <div class="six bottom-cards">
+          <div class="card-image">
+            <img src="./assets/images/image-top-laptops.jpg" alt="" srcset="" />
+          </div>
+          <div class="card-text">
+            <h2>02</h2>
+            <br />
+            <h4>Top 10 Laptops of 2022</h4>
+            <br />
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
         </div>
         <!-- Div Seven -->
-        <div class="seven">
-          <img src="./assets/images/image-gaming-growth.jpg" alt="" srcset="" />
-          <p>
-            03 The Growth of Gaming How the pandemic has sparked fresh
-            opportunities.
-          </p>
+        <div class="seven bottom-cards">
+          <div class="card-image">
+            <img
+              src="./assets/images/image-gaming-growth.jpg"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="card-text">
+            <h2>03</h2>
+            <br />
+            <h4>The Growth of Gaming</h4>
+            <br />
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -98,7 +127,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Felix Kipkirui</a>.
     </div>
   </body>
 </html>
